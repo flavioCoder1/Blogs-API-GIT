@@ -1,6 +1,6 @@
 # Boas vindas ao meu repositório do API de Blogs!
 
-  - [Lista de Requisitos](#lista-de-requisitos)
+  - [Todos endpoints da minha API!](#lista-de-requisitos)
     - [1 - Minha aplicação tem o endpoint POST `/user`](#1---sua-aplicação-deve-ter-o-endpoint-post-user)
     - [2 - Minha aplicação tem o endpoint POST `/login`](#2---sua-aplicação-deve-ter-o-endpoint-post-login)
     - [3 - Minha aplicação tem o endpoint GET `/user`](#3---sua-aplicação-deve-ter-o-endpoint-get-user)
@@ -16,7 +16,7 @@
 
 # Habilidades 
 
-Nesse projeto consegui construír um back-end usando `ORM` com o pacote `sequelize` do `npm`, e fui capaz de:
+Nesse projeto consegui construír um back-end usando `ORM` com o pacote `sequelize` do `npm` e fui capaz de:
  - Criar e associar tabelas usando `models` do `sequelize`
  - Construir endpoints para consumir os models que criar 
  - Fazer um `CRUD` com o `ORM`
