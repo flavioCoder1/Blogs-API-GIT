@@ -85,7 +85,7 @@ npm test req07
 ---  
 
 
-### 1 - Sua aplicação deve ter o endpoint POST `/user`
+### 1 - Minha aplicação tem o endpoint POST `/user`
 
 #### Os seguintes pontos serão avaliados:
 
@@ -180,7 +180,7 @@ Se o usuário cadastrar o campo "email" com um email que já existe, o resultado
 
 ![Usuário Existente](./public/usuariojaexistente.png)
 
-### 2 - Sua aplicação deve ter o endpoint POST `/login`
+### 2 - Minha aplicação tem  o endpoint POST `/login`
 
 #### Os seguintes pontos serão avaliados:
 
@@ -246,7 +246,7 @@ Se o login for com usuário inexistente o resultado retornado deverá ser confor
 
 ![Usuário não existe](./public/usuarionaoexiste.png)
 
-### 3 - Sua aplicação deve ter o endpoint GET `/user`
+### 3 - Minha aplicação tem  o endpoint GET `/user`
 
 #### Os seguintes pontos serão avaliados:
 
@@ -285,7 +285,7 @@ Se o token for inválido o resultado retornado deverá ser conforme exibido abai
 
 ![Token inválido](./public/tokeninvalido.png)
 
-### 4 - Sua aplicação deve ter o endpoint GET `/user/:id`
+### 4 - Minha aplicação tem o endpoint GET `/user/:id`
 
 #### Os seguintes pontos serão avaliados:
 
@@ -328,7 +328,7 @@ Se o token for inválido o resultado retornado deverá ser conforme exibido abai
 
 ![Listar um usuário com token inválido](./public/tokeninvalidoumusuario.png)
 
-### 5 - Sua aplicação deve ter o endpoint POST `/categories`
+### 5 - Minha aplicação tem o endpoint POST `/categories`
 
 #### Os seguintes pontos serão avaliados:
 
@@ -369,7 +369,7 @@ Se o token for inexistente o resultado retornado deverá ser conforme exibido ab
 
 ![Cadastrar uma categoria sem token](./public/cadastrarcategoriasemtoken.png)
 
-### 6 - Sua aplicação deve ter o endpoint GET `/categories`
+### 6 - Minha aplicação tem o endpoint GET `/categories`
 
 #### Os seguintes pontos serão avaliados:
 
@@ -409,7 +409,7 @@ Se o token for inexistente o resultado retornado deverá ser conforme exibido ab
 ![Buscar uma categoria sem token](./public/buscarcategoriasemtoken.png)
 
 
-### 7 - Sua aplicação deve ter o endpoint POST `/post`
+### 7 - Minha aplicação tem o endpoint POST `/post`
 
 #### Os seguintes pontos serão avaliados:
 
@@ -472,7 +472,7 @@ Se o token for inválido o resultado retornado deverá ser conforme exibido abai
 
 ![blogpost com token inválido](./public/criarposttokeninvalido.png)
 
-### 8 - Sua aplicação deve ter o endpoint GET `/post`
+### 8 - Minha aplicação tem  o endpoint GET `/post`
 
 #### Os seguintes pontos serão avaliados:
 
@@ -523,7 +523,7 @@ Se o token for inválido o resultado retornado deverá ser conforme exibido abai
 
 ![blogpost com token inválido](./public/listarposttokeninvalido.png)
 
-### 9 - Sua aplicação deve ter o endpoint GET `post/:id`
+### 9 - Minha aplicação tem o endpoint GET `post/:id`
 
 #### Os seguintes pontos serão avaliados:
 
@@ -580,7 +580,7 @@ Se o id do post for inválido o resultado retornado deverá ser conforme exibido
 
 
 
-### 10 - Sua aplicação deve ter o endpoint PUT `/post/:id`
+### 10 - Minha aplicação tem o endpoint PUT `/post/:id`
 
 #### Os seguintes pontos serão avaliados:
 
@@ -650,7 +650,7 @@ Se não conter o campo `content` o resultado retornado deverá ser conforme exib
 
 ## Requisitos Bônus
 
-### 11 - Sua aplicação deve ter o endpoint DELETE `post/:id`
+### 11 - Minha aplicação tem o endpoint DELETE `post/:id`
 
 #### Os seguintes pontos serão avaliados:
 
