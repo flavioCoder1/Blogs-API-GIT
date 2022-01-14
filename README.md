@@ -51,17 +51,15 @@ https://www.npmjs.com/package/sequelize
 
 https://www.npmjs.com/package/sequelize-cli
 
-COMANDOS:
+# COMANDOS:
 
-npm i sequelize
+`npm i sequelize` E `npm i sequelize-cli`
 
-npm i sequelize-cli
+- Para dropar: "npx sequelize-cli db:drop " 
 
-"drop": "npx sequelize-cli db:drop $" -- Dropa o banco
+- Cria o banco e gera as tabelas: "npx sequelize-cli db:create && npx sequelize-cli db:migrate " 
 
-"prestart": "npx sequelize-cli db:create && npx sequelize-cli db:migrate $" -- Cria o banco e gera as tabelas
-
-"seed": "npx sequelize-cli db:seed:all $", -- Insere dados na tabela
+- Insere os dados nas tabelas: "npx sequelize-cli db:seed:all "
 
 4. Rode o ORM (Sequelize-CLI) e o Node (npm start) e execute as requisições onde preferir
 
