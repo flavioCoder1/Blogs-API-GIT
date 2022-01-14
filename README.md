@@ -46,11 +46,17 @@ Para fazer um post é necessário usuário e login, portanto será trabalhada a 
 2. Instale as dependências [**Caso existam**]
   * `npm install`
 
-3. Instale o ORM e rode o CLI no terminal: 
+3. Inicie o ORM e rode o CLI no terminal: 
 
 https://www.npmjs.com/package/sequelize
 
 https://www.npmjs.com/package/sequelize-cli
+
+npx sequelize-cli db:drop -- Dropa o banco
+
+npx sequelize-cli db:create (Cria o banco) && npx sequelize-cli db:migrate  (Gera as tabelas)
+
+npx sequelize-cli db:seed:all -- Insere dados na tabela
 
 # COMANDOS:
 
