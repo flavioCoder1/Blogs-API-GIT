@@ -52,11 +52,13 @@ https://www.npmjs.com/package/sequelize
 
 https://www.npmjs.com/package/sequelize-cli
 
-npx sequelize-cli db:drop -- Dropa o banco
+ALIAS:
 
-npx sequelize-cli db:create (Cria o banco) && npx sequelize-cli db:migrate  (Gera as tabelas)
+"drop": "npx sequelize-cli db:drop $" -- Dropa o banco
 
-npx sequelize-cli db:seed:all -- Insere dados na tabela
+"prestart": "npx sequelize-cli db:create && npx sequelize-cli db:migrate $" -- Cria o banco e gera as tabelas
+
+"seed": "npx sequelize-cli db:seed:all $", -- Insere dados na tabela
 
 # COMANDOS:
 
