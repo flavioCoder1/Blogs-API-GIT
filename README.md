@@ -1,18 +1,18 @@
 # Boas vindas ao meu repositório do API de Blogs!
 
   - [Lista de Requisitos](#lista-de-requisitos)
-    - [1 - Sua aplicação deve ter o endpoint POST `/user`](#1---sua-aplicação-deve-ter-o-endpoint-post-user)
-    - [2 - Sua aplicação deve ter o endpoint POST `/login`](#2---sua-aplicação-deve-ter-o-endpoint-post-login)
-    - [3 - Sua aplicação deve ter o endpoint GET `/user`](#3---sua-aplicação-deve-ter-o-endpoint-get-user)
-    - [4 - Sua aplicação deve ter o endpoint GET `/user/:id`](#4---sua-aplicação-deve-ter-o-endpoint-get-userid)
-    - [5 - Sua aplicação deve ter o endpoint POST `/categories`](#5---sua-aplicação-deve-ter-o-endpoint-post-categories)
-    - [6 - Sua aplicação deve ter o endpoint GET `/categories`](#6---sua-aplicação-deve-ter-o-endpoint-get-categories)
-    - [7 - Sua aplicação deve ter o endpoint POST `/post`](#7---sua-aplicação-deve-ter-o-endpoint-post-post)
-    - [8 - Sua aplicação deve ter o endpoint GET `/post`](#8---sua-aplicação-deve-ter-o-endpoint-get-post)
-    - [9 - Sua aplicação deve ter o endpoint GET `post/:id`](#9---sua-aplicação-deve-ter-o-endpoint-get-postid)
-    - [10 - Sua aplicação deve ter o endpoint PUT `/post/:id`](#10---sua-aplicação-deve-ter-o-endpoint-put-postid)
+    - [1 - Minha aplicação tem o endpoint POST `/user`](#1---sua-aplicação-deve-ter-o-endpoint-post-user)
+    - [2 - Minha aplicação tem o endpoint POST `/login`](#2---sua-aplicação-deve-ter-o-endpoint-post-login)
+    - [3 - Minha aplicação tem o endpoint GET `/user`](#3---sua-aplicação-deve-ter-o-endpoint-get-user)
+    - [4 - Minha aplicação tem o endpoint GET `/user/:id`](#4---sua-aplicação-deve-ter-o-endpoint-get-userid)
+    - [5 - Minha aplicação tem o endpoint POST `/categories`](#5---sua-aplicação-deve-ter-o-endpoint-post-categories)
+    - [6 - Minha aplicação tem o endpoint GET `/categories`](#6---sua-aplicação-deve-ter-o-endpoint-get-categories)
+    - [7 - Minha aplicação tem o endpoint POST `/post`](#7---sua-aplicação-deve-ter-o-endpoint-post-post)
+    - [8 - Minha aplicação tem o endpoint GET `/post`](#8---sua-aplicação-deve-ter-o-endpoint-get-post)
+    - [9 - Minha aplicação tem o endpoint GET `post/:id`](#9---sua-aplicação-deve-ter-o-endpoint-get-postid)
+    - [10 - Minha aplicação tem o endpoint PUT `/post/:id`](#10---sua-aplicação-deve-ter-o-endpoint-put-postid)
     - [Requisitos Bônus](#requisitos-bônus)
-    - [11 - Sua aplicação deve ter o endpoint DELETE `post/:id`](#11---sua-aplicação-deve-ter-o-endpoint-delete-postid)
+    - [11 - Minha aplicação tem o endpoint DELETE `post/:id`](#11---sua-aplicação-deve-ter-o-endpoint-delete-postid)
 
 # Habilidades 
 
@@ -38,14 +38,32 @@ Para fazer um post é necessário usuário e login, portanto será trabalhada a 
 ### Para rodar o projeto:
 
 1. Clone o repositório
-  * `git clone git@github.com:luiszeh/blogApi.git`.
+  * `git clone git@github.com:flavioCoder1/Blogs-API-GIT.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd blogApi`
+    * `cd Blogs-API-GIT`
 
 2. Instale as dependências [**Caso existam**]
   * `npm install`
 
-3. Rode o DB e o Node e execute as requisições onde preferir
+3. Instale o ORM e rode o CLI no terminal: 
+
+https://www.npmjs.com/package/sequelize
+
+https://www.npmjs.com/package/sequelize-cli
+
+COMANDOS:
+
+npm i sequelize
+
+npm i sequelize-cli
+
+"drop": "npx sequelize-cli db:drop $" -- Dropa o banco
+
+"prestart": "npx sequelize-cli db:create && npx sequelize-cli db:migrate $" -- Cria o banco e gera as tabelas
+
+"seed": "npx sequelize-cli db:seed:all $", -- Insere dados na tabela
+
+4. Rode o ORM (Sequelize-CLI) e o Node (npm start) e execute as requisições onde preferir
 
 ### Execução de testes unitários
 
