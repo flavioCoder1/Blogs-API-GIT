@@ -31,7 +31,7 @@
     "sequelize-cli": "6.2.0",
     "supertest": "4.0.2"
   },
-  "description": "Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.",
+  "description": "Projeto Blogs API",
   "main": "index.js",
   "directories": {
     "test": "tests"

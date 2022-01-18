@@ -1,6 +1,6 @@
 const { BlogPosts, Users, Categories, PostsCategories } = require('../models');
 const category = require('./categoryService');
-const checkUserLog = require('./helpers/checkUserLog');
+const checkUserLog = require('../services/helpers/checkUserLog');
 
 const createPostCategory = async (categoryId, postId) => {
   const response = await PostsCategories.create({ categoryId, postId });
@@ -71,7 +71,6 @@ const getPostById = async (id) => {
 };
 
 const updatePost = async (postMod) => {
-  try {
   const { id, title, content, userId } = postMod;
   await checkUserLog(id, userId);
 
@@ -81,9 +80,6 @@ const updatePost = async (postMod) => {
     id, { include: { model: Categories, as: 'categories', through: { attributes: [] } } },
   );
   return response;
-  } catch (err) {
-    return { message: err.message };
-  }
 };
 
 const deletePost = async (id, userId) => {

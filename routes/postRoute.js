@@ -10,7 +10,7 @@ const {
     deletePost } = require('../controllers/postController');
 
 const validatePost = [validate.title, validate.content, validate.categoryIds];
-const validateUpdatePost = [
+const valUpdatePost = [
     validateUpdatePost.Title, 
     validateUpdatePost.Content, 
     validateUpdatePost.CategoryIds];
@@ -18,7 +18,7 @@ const validateUpdatePost = [
 router.post('/', validateToken, validatePost, create);
 router.get('/', validateToken, getAll);
 router.get('/:id', validateToken, getPostById);
-router.put('/:id', validateToken, validateUpdatePost, updatePost);
+router.put('/:id', validateToken, valUpdatePost, updatePost);
 router.delete('/:id', validateToken, deletePost);
 
 module.exports = router;

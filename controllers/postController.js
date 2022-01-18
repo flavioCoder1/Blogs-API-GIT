@@ -38,28 +38,29 @@ const getPostById = async (req, res) => {
   }
 };
 
-const updatePost = async (req, res) => {
+const updatePost = async (req, res, next) => {
   try {
     const { id } = req.params;
     const { title, content } = req.body;
     const { id: userId } = req.user;
 
     const updatedPost = await service.updatePost({ id, title, content, userId });
+
     res.status(200).json(updatedPost);
   } catch (err) {
-    return res.status(500).json({ message: err.message });
+    next(err);
   }
 };
 
-const deletePost = async (req, res) => {
+const deletePost = async (req, res, next) => {
   try {
     const { id } = req.params;
     const { id: userId } = req.user;
 
-     await service.deletePost(id, userId);
-     res.status(204).end();
+    await service.deletePost(id, userId);
+    res.status(204).end();
   } catch (err) {
-    return res.status(500).json({ message: err.message });
+    next(err);
   }
 };
 
