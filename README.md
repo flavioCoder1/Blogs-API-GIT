@@ -24,9 +24,9 @@ Nesse projeto consegui construír um back-end usando `ORM` com o pacote `sequeli
 
 ## O que foi desenvolvido
 
-Eu construí e desenvolvi uma API de um CRUD posts de um blog (com o Sequelize). Começando pela API, você vai desenvolver alguns endpoints (seguindo os princípios do REST & S.O.L.I.D.) que estarão conectados ao seu banco de dados.
+Eu construí e desenvolvi uma API de um CRUD posts de um blog (com o Sequelize). Começando pela API, eu desenvolvi alguns endpoints (seguindo os princípios do REST & S.O.L.I.D.) que estarão conectados ao seu banco de dados.
 
-Primeiro, eu criei uma tabela para os usuários que desejam se cadastrar na aplicação. Após isso, também uma tabela de Categorias para seus Posts e por fim a tabela de Posts será seu foco, guardando todas as informações dos posts realizados na plataforma, além de criar uma tabela relacionando Posts e Categorias associadas por Foreign Key. Essa sequência é apenas uma recomendação!
+Primeiro, eu criei uma tabela para os usuários que desejam se cadastrar na aplicação. Após isso, também uma tabela de Categorias para seus Posts e por fim a tabela de Posts foi meu foco, guardando todas as informações dos posts realizados na plataforma, além de criar uma tabela relacionando Posts e Categorias associadas por Foreign Key. Essa sequência é apenas uma recomendação!
 
 ---
 
@@ -70,7 +70,7 @@ ALIAS:
 
 - Insere os dados nas tabelas: "npx sequelize-cli db:seed:all "
 
-4. Rode o ORM (Sequelize-CLI) e o Node (npm start) e execute as requisições onde preferir
+4. Rode o ORM (Sequelize-CLI) e o Node (npm start) e execute as requisições onde preferir (Utilizei o Insomnia (https://insomnia.rest/))
 
 ### Execução de testes unitários
 
